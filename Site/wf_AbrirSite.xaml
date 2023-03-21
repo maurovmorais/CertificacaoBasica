@@ -83,11 +83,7 @@
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="wf_AbrirSite" sap:VirtualizedContainerService.HintSize="691.2,1134.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="var_strURL">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String" xml:space="preserve">https://www.casasbahia.com.br/ </Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="https://www.casasbahia.com.br/ " Name="var_strURL" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -127,9 +123,9 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:UiElementExists Exists="{x:Null}" DisplayName="Element Exists 'A  Logo'" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                          <ui:UiElementExists DisplayName="Element Exists 'A  Logo'" Exists="[var_booTelaApareceu]" sap:VirtualizedContainerService.HintSize="387.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                             <ui:UiElementExists.Target>
-                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="45b4ced7-0efa-4106-95c4-d23503a0732d" InformativeScreenshot="6ce8603011400acd16aaa7fbf301bd3d" Selector="&lt;html app='chrome.exe' title='Casas Bahia*' /&gt;&lt;webctrl id='Logo' tag='A' /&gt;" TimeoutMS="5000">
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="45b4ced7-0efa-4106-95c4-d23503a0732d" InformativeScreenshot="6ce8603011400acd16aaa7fbf301bd3d" Selector="&lt;webctrl id='Logo' aaname='CasasBahia.com.br' /&gt;" TimeoutMS="10000">
                                 <ui:Target.WaitForReady>
                                   <InArgument x:TypeArguments="ui:WaitForReady" />
                                 </ui:Target.WaitForReady>
